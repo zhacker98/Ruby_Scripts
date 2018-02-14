@@ -1,16 +1,23 @@
 <html>
-  <body>
-  <b>CURRENT TIME:</b> <%= Time.now %>
-  <hr>
-  <b>CURRENT DATE:</b> <%= TestVar %>
-  <hr>
-  <b>CURRENT UPTIME:</b> <%= Uptime %>  
-  <hr>
-  <b>CURRENT LOAD:</b> <%= Load %> 
-  <hr>
-  <b>CURRENT ROOT DISK:</b> <%= Disk %>
-  <hr>
-  <b>CURRENT ARP TABLE:</b> <%= Arp %>
-  <hr>
+  <title>NODE STATUS: <%= NodeName %></title>
+    <body>
+      <b>NODE NAME:</b>  <%= NodeName %>
+      <hr>
+      <b>CURRENT TIME:</b> <%= Time.now %>
+      <hr>
+      <b>CURRENT DATE:</b> <%= CurDate %>
+      <hr>
+      <b>START TIME:</b> <%= StartTime %>
+      <hr>
+      <b>CURRENT UPTIME:</b> <%= Uptime %>  
+      <hr>
+      <b>CURRENT LOAD:</b> <%= Load %> 
+      <hr>
+      <b>PROCCESSOR COUNT:</b> <%= ProcCount %>
+      <hr>
+      <b>CURRENT ROOT DISK:</b> <%= Disk %>
+      <hr>
+      <b>CURRENT ARP TABLE:</b> <%= Arp %>
+      <hr>
   </body>
 </html>
