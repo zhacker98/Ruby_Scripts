@@ -4,6 +4,7 @@ require 'erb'
 
 HostName=`hostname -f`
 StartTime=Time.now
+ProcCount=`cat /proc/cpuinfo|grep proc|wc -l`
 
 get '/' do
   CurDate=`date +%Y-%m-%d`
